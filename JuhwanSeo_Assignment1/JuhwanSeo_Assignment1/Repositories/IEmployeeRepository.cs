@@ -7,6 +7,7 @@ namespace JuhwanSeo_Assignment1.Repositories
 	/// <summary>
 	///	 Employee Repository Interface
 	///	 Defines basic CRUD operations
+	///	 
 	///	 Includes:
 	///		C: Add Employee
 	///		R: Get All Employees, Get Employee By Id

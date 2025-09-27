@@ -7,6 +7,7 @@ namespace JuhwanSeo_Assignment1.Repositories
 	/// <summary>
 	/// Product Repository Interface
 	/// Defines basic CRUD operations
+	/// 
 	/// Includes:
 	///		C: Add Product
 	///		R: Get All Products, Get Product By Id
