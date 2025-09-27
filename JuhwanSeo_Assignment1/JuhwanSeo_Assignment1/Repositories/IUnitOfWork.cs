@@ -9,6 +9,7 @@
 		IEmployeeRepository Employees { get; }
 		// Access to Product Repository
 		IProductRepository Products { get; }
+
 		// Commit changes to the database
 		int Complete();
 	}

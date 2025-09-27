@@ -17,7 +17,6 @@ namespace JuhwanSeo_Assignment1.Repositories
 		{
 			// inject DbContext and Repositories
 			_appDbContext = appDbContext;
-
 			Employees = employeeRepository;
 			Products = productRepository;
 		}
