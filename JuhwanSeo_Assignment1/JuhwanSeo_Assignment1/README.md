@@ -25,3 +25,18 @@ IUnitOfWork 인터페이스에 Employees, Products 속성과 Complete() 메서�
 
 
 UnitOfWork 클래스에 Employees, Products 속성과 Complete() 메서드 구현. Complete() 메서드는 DbContext의 SaveChanges() 호출
+
+
+Program.cs 파일 수정
+- In-Memory Database 설정
+- Repository와 UnitOfWork DI 설정
+
+
+Program.cs 파일에 데이터베이스 초기화 코드 추가
+using (var scope = app.Services.CreateScope()) 내부에 
+`if (app.Environment.IsDevelopment())` 조건문 추가 후 환경에 따라 데이터가 추가되도록 구현하려 하는데 program.cs 파일에서 데이터를 씨드하는 방법에서 막힘.
+dbContext.Employees = DbSet<Employee>인 것을 생각해서
+DbSet<>의 메소드들을 검토(DbSet has methods like CRUD methods for it's table)
+AddRange에 대해 조사해봄.
+web reference: https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1.addrange?view=efcore-8.0
+
