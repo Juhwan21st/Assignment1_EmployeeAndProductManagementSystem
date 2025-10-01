@@ -41,24 +41,24 @@ using (var scope = app.Services.CreateScope())
 		// DbSet has methods like CRUD methods for it's table
 		// web reference: https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1.addrange?view=efcore-8.0
 		dbContext.Employees.AddRange(
-			new Employee { Id = 1, Name = "Juhwan Seo", Department = "IT" },
-			new Employee { Id = 2, Name = "Sangho Seo", Department = "HR" }
+			new Employee { Id = 1, Name = "Dev Juhwan", Department = "IT" },
+			new Employee { Id = 2, Name = "Dev Sangho", Department = "HR" }
 			);
 		dbContext.Products.AddRange(
-			new Product { Id = 1, Name = "Laptop", Price = 1350.50M },
-			new Product { Id = 2, Name = "Keyboard", Price = 135.25M }
+			new Product { Id = 1, Name = "Dev Laptop", Price = 1350.50M },
+			new Product { Id = 2, Name = "Dev Keyboard", Price = 135.25M }
 			);
 	}
 	else
 	{
 		// Seed data for Production environment
 		dbContext.Employees.AddRange(
-			new Employee { Id = 1, Name = "Eri Cho", Department = "IT" },
-			new Employee { Id = 2, Name = "Yuhwan Seo", Department = "HR" }
+			new Employee { Id = 1, Name = "Prod Eri", Department = "IT" },
+			new Employee { Id = 2, Name = "Prod Yuhwan", Department = "HR" }
 		);
 		dbContext.Products.AddRange(
-			new Product { Id = 1, Name = "Notepad", Price = 3.20M },
-			new Product { Id = 2, Name = "Tablet", Price = 185.99M }
+			new Product { Id = 1, Name = "Prod Notepad", Price = 3.20M },
+			new Product { Id = 2, Name = "Prod Tablet", Price = 185.99M }
 		);
 	}
 
