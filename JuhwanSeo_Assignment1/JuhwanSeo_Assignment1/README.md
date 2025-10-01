@@ -39,4 +39,15 @@ dbContext.Employees = DbSet<Employee>인 것을 생각해서
 DbSet<>의 메소드들을 검토(DbSet has methods like CRUD methods for it's table)
 AddRange에 대해 조사해봄.
 web reference: https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1.addrange?view=efcore-8.0
+AddRange를 사용하여 다중 엔티티를 추가함.
 
+
+Controllers 폴더 생성 후 EmployeesController와 ProductsController 클래스 생성
+
+응답 상태 코드의 처리를 위해 다음 문서를 공부했음.
+web reference: https://learn.microsoft.com/en-us/aspnet/core/web-api/action-return-types?view=aspnetcore-8.0#asynchronous-action
+
+
+if the controller uses [ApiController] attribute, there is no need to specify bounding source attributes like [FromRoute], but it can be good for clarity.
+바운딩 소스 속성에 대한 자세한 내용은 다음 문서를 공부했음.
+web reference: https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-8.0#binding-source-parameter-inference
