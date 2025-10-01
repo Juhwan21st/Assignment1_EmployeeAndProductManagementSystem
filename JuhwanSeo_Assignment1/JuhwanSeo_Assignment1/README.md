@@ -51,3 +51,11 @@ web reference: https://learn.microsoft.com/en-us/aspnet/core/web-api/action-retu
 if the controller uses [ApiController] attribute, there is no need to specify bounding source attributes like [FromRoute], but it can be good for clarity.
 바운딩 소스 속성에 대한 자세한 내용은 다음 문서를 공부했음.
 web reference: https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-8.0#binding-source-parameter-inference
+
+
+launchSettings.json 파일 수정
+set new environment
+아래 참고 문서를 참고했음.
+web reference: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-8.0
+
+swagger가 개발환경 외에서도 동작하도록 수정 (환경별 씨드 데이터 테스트 목적)
