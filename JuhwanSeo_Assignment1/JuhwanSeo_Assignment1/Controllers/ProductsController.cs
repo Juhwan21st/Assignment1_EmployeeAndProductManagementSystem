@@ -72,6 +72,7 @@ namespace JuhwanSeo_Assignment1.Controllers
 		public ActionResult UpdateProduct([FromRoute] int id, [FromBody] Product product)
 		{
 			var existingProduct = _unitOfWork.Products.GetProductById(id);
+
 			if (existingProduct == null)
 			{
 				// return HTTP 404 Not Found if the product does not exist

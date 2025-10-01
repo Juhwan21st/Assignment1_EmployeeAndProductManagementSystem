@@ -61,6 +61,9 @@ using (var scope = app.Services.CreateScope())
 			new Product { Id = 2, Name = "Tablet", Price = 185.99M }
 		);
 	}
+	
+	// Save changes to add seed data to the database
+	dbContext.SaveChanges();
 }
 // ----------------------------------
 
