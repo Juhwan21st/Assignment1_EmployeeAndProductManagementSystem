@@ -5,6 +5,64 @@
 
 ---
 
+## API Testing Screenshots
+
+### Employee API Tests
+<details>
+<summary>Employee API screenshots</summary>
+
+#### GET All Employees
+![Get All Employees](res/Employee_GetAll.png)
+
+#### GET Employee by ID
+![Get Employee by ID](res/Employee_GetById.png)
+
+#### POST - Add New Employee
+![Add Employee](res/Employee_AddEmployee.png)
+
+#### PUT - Update Employee
+![Update Employee](res/Employee_Update.png)
+
+#### DELETE Employee
+![Delete Employee](res/Employee_Delete.png)
+
+</details>
+
+### Product API Tests
+<details>
+<summary>Product API screenshots</summary>
+
+#### GET All Products
+![Get All Products](res/Product_GetAll.png)
+
+#### GET Product by ID
+![Get Product by ID](res/Product_GetById.png)
+
+#### POST - Add New Product
+![Add Product](res/Product_Add.png)
+
+#### PUT - Update Product
+![Update Product](res/Product_Update.png)
+
+#### DELETE Product
+![Delete Product](res/Product_Delete.png)
+
+</details>
+
+### Environment-Specific Seed Data Tests
+<details>
+<summary>Production Environment screenshots</summary>
+
+#### Production Environment - Employees
+![Production Environment - Employees](res/Env_Production_GetAllEmployee.png)
+
+#### Production Environment - Products
+![Production Environment - Products](res/Env_Production_GetAllProduct.png)
+
+</details>
+
+---
+
 ## Key Learning Concepts
 - **Dependency Injection (DI)**  
 - **Repository Pattern**
