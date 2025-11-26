@@ -3,6 +3,8 @@
 **Project**: Assignment 1 - Employee and Product Management System  
 **Programmed by**: Juhwan Seo [8819123]
 
+**Other Repo**:
+- [Assignment 3](https://github.com/Juhwan21st/Assignment3_EquipmentRental_Group12)
 ---
 
 ## API Testing Screenshots
